@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f0f0;
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+}
+
+nav {
+    height: 70px;
+    background-color: #7D7FC6;
+    color: white;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 100px;;
+}
+
+#logo-text {
+    font-weight: bolder;
+}
+
+.search-box {
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.search-box input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 10px 0 0 10px;
+}
+
+.search-box label.icon {
+    cursor: pointer;
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #C4EBE7;
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.search-box label.icon:hover {
+    background-color: #74C4C0;
+}
+
+.search-box label.icon img {
+    width: 25px;
+}
+
+.form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    margin: 40px 200px;
+}
+
+.input_section > h2 {
+    color: #7D7FC6;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    font-size: 16px;
+    background-color: #7D7FC6;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 7px 4px rgba(0,0,0,0.10);
+}
+
+.input_section > form > button:hover {
+    background-color: #74C4C0;
+}
+
+.input_section > form > button > span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0;
+    background: #F0F0F0;
+}
+
+.input_section > form > .input_inline {
+    margin: 20px 0;
+}
+
+form {
+    padding: 10px 50px;
+}
+
+.book_shelf{
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    padding: 20px 50px;
+}
+
+.book_shelf > h2 {
+    color: #7D7FC6;
+    text-align: left;
+    padding: 15px 20px 10px;
+}
+
+.book_list {
+    align-items: center;
+}
+
+article.book_item {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    margin: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 7px 4px rgba(0,0,0,0.10);
+}
+
+article.book_item:hover {
+    box-shadow: 0 0 7px 4px rgba(56, 136, 254, 0.826);
+}
+
+.inner_item {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.actions {
+    border: none;
+    background: transparent;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/checked.png');
+    opacity: 70%;
+    transition: 0.3s ease;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/checked.png');
+    opacity: 100%;
+    background-size: contain;
+}
+
+.delete-button {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/cancel.png');
+    opacity: 60%;
+    transition: 0.3s ease;
+    background-size: contain;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.delete-button:hover {
+    background: url('../assets/cancel.png');
+    opacity: 100%;
+    background-size: contain;
+}
+
+.undo-button {
+    width: 42px;
+    height: 42px;
+    background: url('../assets/return.png');
+    opacity: 75%;
+    transition: 0.3s ease;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/return.png');
+    opacity: 100%;
+    background-size: contain;
+}

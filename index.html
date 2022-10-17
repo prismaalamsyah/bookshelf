@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- limonte-sweetalert2 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css" integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+              <h1 id="logo-text">Bookshelf Apps</h1>
+            </div>
+            <div class="search-box">
+                <input id="search-field" type="search" placeholder="Cari Buku..">
+                <label class="icon">
+                    <img src="./assets/search.png" alt="search">
+                </label>
+                <!-- <button id="searchSubmit" type="submit">Cari</button> -->
+          </nav>
+    </header>
+
+    <main>
+        <section class="form input_section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBook">
+              <div class="input">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text" required>
+              </div>
+              <div class="input">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text" required>
+              </div>
+              <div class="input">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number" min="0" required>
+              </div>
+              <div class="input_inline">
+                <label for="inputBookIsComplete">Selesai dibaca</label>
+                <input id="inputBookIsComplete" type="checkbox">
+              </div>
+              <button id="bookSubmit" type="submit">Masukan Buku ke rak <span id="text-list">Belum selesai dibaca</span></button>
+            </form>
+          </section>
+          <section class="form book_shelf">
+            <h2>Belum selesai dibaca</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+          </div>
+          </section>
+          <section class="form book_shelf">
+            <h2>Selesai dibaca</h2>
+            <div id="completeBookshelfList" class="book_list">
+          </div>  
+          </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js" integrity="sha512-IZ95TbsPTDl3eT5GwqTJH/14xZ2feLEGJRbII6bRKtE/HC6x3N4cHye7yyikadgAsuiddCY2+6gMntpVHL1gHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
